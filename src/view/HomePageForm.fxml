@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomePageFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="662.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/homepage2.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="13.0" prefHeight="373.0" prefWidth="361.0" style="-fx-background-color: #ffffff62; -fx-background-radius: 40px; -fx-border-radius: 40px;">
+         <children>
+            <Label layoutX="54.0" layoutY="134.0" text="SHAKTHI" textFill="#72600e">
+               <font>
+                  <Font name="Tahoma Bold" size="55.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="196.0" text="HARDWARE" textFill="#72600e">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="14.0" layoutY="242.0" prefHeight="21.0" prefWidth="333.0" />
+            <FontAwesomeIconView layoutX="14.0" layoutY="282.0" size="15" />
+            <Text layoutX="29.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We will provide all the constuction materials you need" wrappingWidth="319.66357421875">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="92.0" fitWidth="133.0" layoutX="136.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/shh.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="409.0" layoutY="13.0" prefHeight="373.0" prefWidth="239.0" style="-fx-background-color: #ffffff62; -fx-background-radius: 40px; -fx-border-radius: 40px;">
+         <children>
+            <Label layoutX="67.0" layoutY="9.0" prefHeight="58.0" prefWidth="105.0" text="Log in" textFill="#0d02da">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#2f2f2f" glyphName="USER" layoutX="92.0" layoutY="165.0" size="70" text="" />
+            <JFXTextField fx:id="txtUserName" focusColor="BLACK" layoutX="53.0" layoutY="194.0" prefHeight="33.0" prefWidth="170.0" promptText="User Name" unFocusColor="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <FontAwesomeIconView glyphName="KEY" layoutX="14.0" layoutY="219.0" size="25" />
+            <FontAwesomeIconView glyphName="LOCK" layoutX="18.0" layoutY="264.0" size="25" />
+            <JFXButton layoutX="27.0" layoutY="301.0" onAction="#canselBtnOnAction" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #0d8ac4;" text="Cancel" textFill="WHITE" />
+            <JFXButton fx:id="btnSignIn" layoutX="138.0" layoutY="301.0" onAction="#signinBtnOnAction" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #0d8ac4;" text="Sign In" textFill="WHITE" />
+            <JFXPasswordField fx:id="txtPassword" focusColor="BLACK" layoutX="52.0" layoutY="243.0" prefHeight="25.0" prefWidth="170.0" promptText="Password" unFocusColor="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

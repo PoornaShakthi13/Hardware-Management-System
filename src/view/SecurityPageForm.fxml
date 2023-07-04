@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="322.0" prefWidth="410.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SecurityPageFormController">
+   <children>
+      <ImageView fitHeight="322.0" fitWidth="410.0" opacity="0.6" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assets/R.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtOldUserName" focusColor="#07080a" labelFloat="true" layoutX="89.0" layoutY="18.0" prefHeight="35.0" prefWidth="234.0" promptText="User Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="txtOldPswd" focusColor="#07080a" labelFloat="true" layoutX="88.0" layoutY="80.0" prefHeight="35.0" prefWidth="234.0" promptText=" Password" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></JFXPasswordField>
+      <JFXTextField fx:id="txtNewUserName" focusColor="#07080a" labelFloat="true" layoutX="88.0" layoutY="150.0" prefHeight="35.0" prefWidth="234.0" promptText="New User Name" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="txtNewPswd" focusColor="#07080a" labelFloat="true" layoutX="89.0" layoutY="218.0" prefHeight="35.0" prefWidth="234.0" promptText="New Password" unFocusColor="BLACK">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></JFXPasswordField>
+      <JFXButton buttonType="RAISED" layoutX="149.0" layoutY="266.0" onAction="#btnChangeOnAction" prefHeight="38.0" prefWidth="113.0" style="-fx-background-color: #002408;" text="Change" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="18" wrappingWidth="22.428571701049805" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

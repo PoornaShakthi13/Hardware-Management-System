@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingFormPageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3f4d5e" height="400.0" stroke="BLACK" strokeType="INSIDE" width="700.0" />
+      <JFXButton buttonType="RAISED" layoutX="279.0" layoutY="187.0" onAction="#BtnSecurityOnAction" prefHeight="35.0" prefWidth="144.0" style="-fx-background-color: #2184ff;" text="Security" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SHIELD" size="20" wrappingWidth="20.285714149475098" />
+         </graphic>
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="279.0" layoutY="255.0" onAction="#BtnAboutOnAction" prefHeight="35.0" prefWidth="144.0" style="-fx-background-color: #2184ff;" text="About" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="INFO_CIRCLE" size="20" wrappingWidth="30.285714149475098" />
+         </graphic>
+         <font>
+            <Font name="Tahoma Bold" size="20.0" />
+         </font>
+         <padding>
+            <Insets right="15.0" />
+         </padding>
+      </JFXButton>
+      <ImageView fitHeight="111.0" fitWidth="101.0" layoutX="300.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/shh.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

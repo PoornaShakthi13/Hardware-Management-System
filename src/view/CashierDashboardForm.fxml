@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierDashboardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#022240" height="45.0" stroke="BLACK" strokeType="INSIDE" width="650.0" />
+      <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="14.0" layoutY="33.0" size="30" />
+      <Text fill="WHITE" layoutX="58.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User :">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="116.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cashier">
+         <font>
+            <Font name="Tahoma Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="345.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date :">
+         <font>
+            <Font name="Tahoma Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblDate" layoutX="401.0" layoutY="11.0" text="2022-04-05" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="516.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time :">
+         <font>
+            <Font name="Tahoma Bold" size="15.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblTime" layoutX="572.0" layoutY="11.0" text="06.33 pm" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="500.0" layoutY="11.0" orientation="VERTICAL" prefHeight="19.0" prefWidth="6.0" />
+      <ImageView fitHeight="407.0" fitWidth="650.0" layoutY="45.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../assets/background.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#11510d" layoutX="150.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SHAKTHI HARDWARE">
+         <font>
+            <Font name="Tahoma Bold" size="32.0" />
+         </font>
+      </Text>
+      <JFXButton buttonType="RAISED" layoutX="229.0" layoutY="156.0" onAction="#BtnCustomerOnAction" prefHeight="45.0" prefWidth="192.0" style="-fx-background-color: #08018c; -fx-background-radius: 10PX;" text="CUSTOMER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CARET_DOWN" size="25" wrappingWidth="32.2857141494751" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="229.0" layoutY="278.0" onAction="#BtnItemOnAction" prefHeight="45.0" prefWidth="192.0" style="-fx-background-color: #08018c; -fx-background-radius: 10PX;" text="ITEM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CARET_DOWN" size="25" wrappingWidth="43.571427166461945" />
+         </graphic>
+         <padding>
+            <Insets right="50.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="229.0" layoutY="339.0" onAction="#BtnStocksOnAction" prefHeight="45.0" prefWidth="192.0" style="-fx-background-color: #08018c; -fx-background-radius: 10PX;" text="STOCKS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CARET_DOWN" size="25" wrappingWidth="29.285714149475098" />
+         </graphic>
+         <padding>
+            <Insets right="35.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="229.0" layoutY="216.0" onAction="#BtnOrderOnAction" prefHeight="45.0" prefWidth="192.0" style="-fx-background-color: #08018c; -fx-background-radius: 10PX;" text="ORDER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="CARET_DOWN" size="25" wrappingWidth="37.2857141494751" />
+         </graphic>
+         <padding>
+            <Insets right="35.0" />
+         </padding>
+      </JFXButton>
+      <JFXButton fx:id="btnLogOut" buttonType="RAISED" layoutX="14.0" layoutY="65.0" onAction="#btnLogOutOnAction" style="-fx-background-color: #c90e0e;" text="Log out" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerPageFormController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="850.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/j.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa7a785" height="120.0" layoutX="14.0" layoutY="56.0" stroke="BLACK" strokeType="INSIDE" width="821.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa7a785" height="120.0" layoutX="15.0" layoutY="182.0" stroke="BLACK" strokeType="INSIDE" width="821.0" />
+      <TableView fx:id="tblCustomer" layoutX="15.0" layoutY="398.0" prefHeight="146.0" prefWidth="821.0">
+        <columns>
+          <TableColumn fx:id="colCustomerID" prefWidth="102.0" text="ID" />
+          <TableColumn fx:id="colCustomerName" prefWidth="252.0" text="NAME" />
+            <TableColumn fx:id="colCustomerAddress" prefWidth="264.0" text="CONTACT" />
+            <TableColumn fx:id="colCustomerContact" prefWidth="201.0" text="ADDRESS" />
+            <TableColumn fx:id="colCustomerDelete" minWidth="0.0" prefWidth="0.0" />
+        </columns>
+      </TableView>
+      <Label layoutX="15.0" layoutY="51.0" style="-fx-background-color: #000000;" text="Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="178.0" style="-fx-background-color: #000000;" text="Update Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtCustomerId" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="56.0" layoutY="91.0" prefHeight="41.0" prefWidth="122.0" promptText="ID" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerName" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="192.0" layoutY="91.0" prefHeight="41.0" prefWidth="191.0" promptText="NAME" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerAddress" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="396.0" layoutY="91.0" prefHeight="41.0" prefWidth="254.0" promptText="ADDRESS" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtCustomerContact" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="663.0" layoutY="91.0" prefHeight="41.0" prefWidth="155.0" promptText="CONTACT" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtUNAme" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="192.0" layoutY="215.0" prefHeight="41.0" prefWidth="191.0" promptText="NAME" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtUAddress" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="396.0" layoutY="215.0" prefHeight="41.0" prefWidth="254.0" promptText="ADDRESS" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtUContact" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="658.0" layoutY="215.0" prefHeight="41.0" prefWidth="155.0" promptText="CONTACT" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="742.0" layoutY="138.0" onAction="#btnAddCustomerOnAction" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #1a0a3c;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" wrappingWidth="25.714285850524902" />
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="716.0" layoutY="264.0" onAction="#btnUpdateCustomerOnAction" prefHeight="31.0" prefWidth="114.0" style="-fx-background-color: #1a0a3c;" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REFRESH" size="15" wrappingWidth="25.714285850524902" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="15.0" layoutY="6.0" onAction="#backBtnOnAction" prefHeight="31.0" prefWidth="87.0" style="-fx-background-color: #c55353;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" size="16" wrappingWidth="20.0" />
+         </graphic>
+      </JFXButton>
+      <JFXComboBox fx:id="cmbUId" editable="true" focusColor="WHITE" layoutX="56.0" layoutY="215.0" prefHeight="41.0" prefWidth="122.0" promptText="ID" unFocusColor="WHITE" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffa8a89f" height="82.0" layoutX="17.0" layoutY="311.0" stroke="BLACK" strokeType="INSIDE" width="821.0" />
+      <JFXComboBox fx:id="cmbDeleteId1" editable="true" focusColor="WHITE" layoutX="28.0" layoutY="341.0" prefHeight="41.0" prefWidth="122.0" promptText="ID" unFocusColor="WHITE" />
+      <JFXTextField fx:id="txtDeleteNAme1" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="166.0" layoutY="341.0" prefHeight="41.0" prefWidth="191.0" promptText="NAME" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDeleteAddress1" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="370.0" layoutY="341.0" prefHeight="41.0" prefWidth="254.0" promptText="ADDRESS" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDeleteContact1" alignment="CENTER_RIGHT" focusColor="WHITE" labelFloat="true" layoutX="632.0" layoutY="341.0" prefHeight="41.0" prefWidth="155.0" promptText="CONTACT" style="-fx-border-color: #FFFFFF;" unFocusColor="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="795.0" layoutY="342.0" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="37.0" style="-fx-background-color: e70000;" text=".">
+         <font>
+            <Font size="1.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="20" wrappingWidth="9.714285850524902" />
+         </graphic>
+      </JFXButton>
+      <Label layoutX="18.0" layoutY="306.0" style="-fx-background-color: #000000;" text="Delete Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

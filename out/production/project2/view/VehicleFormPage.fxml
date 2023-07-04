@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VehicleFormPageController">
+   <children>
+      <ImageView fitHeight="550.0" fitWidth="850.0" opacity="0.95" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/j.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="14.0" layoutY="77.0" prefHeight="143.0" prefWidth="818.0" style="-fx-background-color: #9d7e03; -fx-background-radius: 30px; -fx-border-radius: 40px;">
+         <children>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="-17.0" prefHeight="35.0" prefWidth="158.0" style="-fx-background-color: #ffffff;" text="ADD VEHICLE" textFill="#141413">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font></Label>
+            <JFXTextField fx:id="txtVehicleNumber" focusColor="WHITE" labelFloat="true" layoutX="266.0" layoutY="59.0" promptText="Vehicle Number" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtDate" focusColor="WHITE" labelFloat="true" layoutX="483.0" layoutY="59.0" promptText="Date" unFocusColor="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="679.0" layoutY="88.0" onAction="#addBtnOnAction" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: #1a0a3c;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="20" wrappingWidth="25.714285850524902" />
+               </graphic>
+            </JFXButton>
+            <JFXComboBox fx:id="cmbVehicleType" focusColor="WHITE" labelFloat="true" layoutX="56.0" layoutY="59.0" prefHeight="25.0" prefWidth="158.0" promptText="vehicle Type" unFocusColor="WHITE" />
+         </children></Pane>
+      <TableView fx:id="tblVehicle" layoutX="14.0" layoutY="393.0" prefHeight="143.0" prefWidth="818.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNumber" prefWidth="209.0" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="324.0" text="Vehicle Type" />
+            <TableColumn fx:id="colDate" prefWidth="284.0" text="Vehcle Added Date" />
+        </columns>
+      </TableView>
+      <Pane layoutX="16.0" layoutY="238.0" prefHeight="143.0" prefWidth="818.0" style="-fx-background-color: #9d7e03; -fx-background-radius: 30px; -fx-border-radius: 40px;">
+         <children>
+            <Label alignment="CENTER" layoutX="59.0" layoutY="-11.0" prefHeight="35.0" prefWidth="179.0" style="-fx-background-color: #ffffff;" text="DELETE VEHICLE" textFill="#141413">
+               <font>
+                  <Font name="Tahoma Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtVehicleType" focusColor="WHITE" labelFloat="true" layoutX="264.0" layoutY="59.0" promptText="Vehicle Type" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtDeleteDate" focusColor="WHITE" labelFloat="true" layoutX="478.0" layoutY="59.0" promptText="Date" unFocusColor="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="679.0" layoutY="84.0" onAction="#deleteBtnOnAction" prefHeight="41.0" prefWidth="112.0" style="-fx-background-color: #1a0a3c;" text="DELETE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="TRASH" size="20" wrappingWidth="25.714285850524902" />
+               </graphic>
+            </JFXButton>
+            <JFXComboBox fx:id="cmbVehcleNumber" focusColor="WHITE" labelFloat="true" layoutX="43.0" layoutY="59.0" prefHeight="25.0" prefWidth="158.0" promptText="Vehicle Number" unFocusColor="WHITE" />
+         </children></Pane>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="16.0" layoutY="14.0" onAction="#backBtnOnAction" prefHeight="35.0" prefWidth="90.0" style="-fx-background-color: #c55353;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="REPLY" size="16" wrappingWidth="20.0" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
